@@ -1,0 +1,358 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ecbe04; /* Primary text color */
+    overflow-x: hidden;
+    text-shadow: 8px 5px 5px black;
+}
+
+/* Header Styles */
+header {
+    background: #022c57;
+    color: rgb(12, 154, 182);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+header.scrolled {
+    background: #0d79e6;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgba(208, 156, 206, 0.645);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #896d05;
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    background: #0365c6;
+    color: rgb(52, 2, 2);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Page Styles */
+.page {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    position: relative;
+    transition: background 0.5s;
+    text-shadow: 1px 1px 2px black;
+    color: #d00b25; /* Ensures text color is consistent */
+}
+
+/* Specific Page Backgrounds */
+.page.home {
+    background-image: url('images/home-background.jpg');
+    background-color: #f0f8ff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page.about {
+    background-image: url('images/about-background.jpg');
+    background-color: #d096d4;
+}
+
+.page.services {
+    background-image: url('images/services-background.jpg');
+    background-color: #79c079;
+}
+
+.page.appointment {
+    background-image: url('images/appointment-background.jpg');
+    background-color: #50e9f4;
+}
+
+.page.contact {
+    background-image: url('images/contact-background.jpg');
+    background-color: #96f81f;
+}
+
+.page.feedback {
+    background-image: url('images/feedback-background.jpg');
+    background-color: #74b7de;
+}
+
+/* Content Positioning */
+.page .content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Home Page Specific Content */
+.page.home .content {
+    background: rgba(0, 0, 0, 0.5);
+    color: #20d70f;
+}
+
+.page.home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #66a475;
+    animation: fadeIn 1s ease-in;
+}
+
+.page.home p {
+    font-size: 1.5rem;
+    color: #8668d3;
+    text-shadow: 2px 1px 3px rgb(5, 20, 44);
+}
+
+/* Text Box Styles */
+.text-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 50%;
+}
+
+.text-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in;
+}
+
+.text-box p,
+.text-box ul {
+    font-size: 1.2rem;
+}
+
+.text-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-box ul li {
+    margin-bottom: 1rem;
+    color: #2be51d;
+}
+
+/* Image Box Styles */
+.image-box {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Our Services Section */
+.content {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #084d97;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content ul li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+.content ul li:hover {
+    background-color: #627c95;
+    padding-left: 10px;
+    color: #007bff;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    background: #0467c9;
+    color: rgb(38, 206, 181);
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: #042a50;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    background: #12e154;
+    transform: scale(0.98);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: larger;
+    color: rgb(49, 221, 15);
+    background: rgba(151, 30, 30, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+form:hover {
+    background: rgb(173, 75, 218);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #8c1313;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #14cfa6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes backgroundFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-box,
+    .image-box {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .page .content {
+        padding: 1rem;
+    }
+
+    .content ul li {
+        font-size: 1rem;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.about-image {
+    width: 30vw;  /* width ko viewport ke 30% set kar diya */
+    height: 30vh; /* height ko viewport ke 30% set kar diya */
+    object-fit: cover; /* image ko container ke andar fit karta hai */
+  }
+  

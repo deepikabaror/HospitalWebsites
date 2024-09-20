@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Healthcare System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hospital Healthcare System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#appointment">Appointment</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page home">
+            <div class="content">
+                <h1>Welcome to Our Hospital</h1>
+                <p>We offer world-class healthcare services with a team of dedicated professionals.</p>
+                <a href="documents/overview.pdf" class="button" download>Download Hospital Overview</a>
+                <a href="#appointment" class="button">Make an Appointment</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <!-- <section id="about" class="page about">
+            <div class="content">
+                <h1>About Us</h1>
+                <p>Our hospital is equipped with state-of-the-art facilities and experienced professionals to care for our patients.</p>
+                <a href="documents/about_us.pdf" class="button" download>Download Our Profile</a>
+            </div>
+        </section> -->
+        <section id="about" class="page about">
+            <div class="content">
+                <div class="text-content">
+                    <h1>About Us</h1>
+                    <p>Our hospital is equipped with state-of-the-art facilities and experienced professionals to care for our patients.</p>
+                    <a href="documents/about_us.pdf" class="button" download>Download Our Profile</a>
+                </div>
+                <div class="image-content">
+                    <img class="about-image" src="images/about-image.jpg" alt="About Us Image"> <!-- Replace with your image path -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="page services">
+            <div class="content">
+                <h1>Our Services</h1>
+                <ul>
+                    <li>General Checkups</li>
+                    <li>Specialized Surgeries</li>
+                    <li>Emergency Care</li>
+                    <li>Maternity Services</li>
+                    <li>Pharmacy and Diagnostics</li>
+                  
+                    <li>Cardiology and Neurology</li>
+                    <li>Orthopedic and Physiotherapy</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section id="appointment" class="page appointment">
+            <div class="content">
+                <h1>Book Your Appointment</h1>
+                <p>Click below to book an appointment with one of our doctors.</p>
+                <a href="https://www.eternalhospital.com" target="_blank" class="button">Book Appointment</a>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="page contact">
+            <div class="content">
+                <h1>Contact Us</h1>
+                <form action="mailto:info@hospital.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback" class="page feedback">
+            <div class="content">
+                <h1>Feedback</h1>
+                <p>We value your feedback. Please share your experience with us.</p>
+                <form action="#" method="post">
+                    <textarea rows="4" cols="50" placeholder="Write your feedback here..."></textarea>
+                    <button type="submit" class="button">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hospital Healthcare System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
